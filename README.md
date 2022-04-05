@@ -1,0 +1,1 @@
+# webdriver.io-applitools-ufg-canvas-app
