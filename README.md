@@ -19,3 +19,8 @@ to set preserveDrawingBuffer to true before the browser navigates to the webpage
 1) Install dev-tools to use CDP: npm install @wdio/devtools-service --save-dev
 2) Make sure that wdio.conf.js has  services: ['devtools']
 3) Add the function that sets preserveDrawingBuffer to Page.addScriptToEvaluateOnNewDocument. This needs to happen before the browser navigated to the webpage. (See the test)
+
+
+More information about CDP:
+https://chromedevtools.github.io/devtools-protocol/tot/Page/#method-addScriptToEvaluateOnNewDocument
+https://webdriver.io/docs/devtools-service/
