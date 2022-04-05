@@ -12,3 +12,10 @@ Learn more about Applitools [Eyes](https://info.applitools.com/ucY77) and the [U
 
 More about the Eyes WebdriverIO 6 SDK:
 * https://www.npmjs.com/package/@applitools/eyes-webdriverio
+
+
+## Canvas apps
+to set preserveDrawingBuffer to true before the browser navigates to the webpage with canvas:
+1) Install dev-tools to use CDP: npm install @wdio/devtools-service --save-dev
+2) Make sure that wdio.conf.js has  services: ['devtools']
+3) Add the function that sets preserveDrawingBuffer to Page.addScriptToEvaluateOnNewDocument. This needs to happen before the browser navigated to the webpage. (See the test)
